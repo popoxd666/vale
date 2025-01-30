@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            transition: background 0.5s;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            background: #ff4d4d;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #cc0000;
+        }
+        .message {
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="card">
+        <h2>Mi Amor</h2>
+        <p>Amor, contigo he pasado muchas cosas en estos 5 meses y este sera mi primer dia de San Valentin junto a ti, sinceramente no sabia muy bien que hacerte pero despues pense y dije se hacer cosas porque
+no las aprovecho y bueno, aqui estoy escribiendote, queria decirte que eres una persona muy especial en mi vida, y que realemente siento que tu eres la indicada para mi, aunque a veces no te lo demuestre, pero
+aun asi quiero que sepas, por ti estoy aqui haciendo cosas alguna vez no hice, por ti estoy aqui comiendo cosas que me disgustan, por ti estoy cambiando y empezando a amar... 
+Simplemente te amo, no me importa si estas sudada, sucia, enojada, llorando, riendo, enferma, triste, lo que sea mi amor simplemente te volviste lo mejor que tengo en mi vida ahora y por eso te agradezco mucho
+que llegaras a mi vida pues gracias a ti comprendi que en este mundo no todas las personas son malas y falsas, pues por ti se que todavia este mundo tiene algo que salvar, gracias a ti pude aprender a confiar
+otra vez, gracias a ti comprendi lo que es ser amado... Pero en fin, sin mas demoras.</p>
+        <button onclick="showMessage()">Continuar</button>
+    </div>
+    <div class="hidden" id="messageScreen">
+        <h1 class="message">Amorcito, mi flaquita hermosa(de este apodo te hablare despues), mi niña consentida, y futura esposa ¿quisieras ser mi Valentín?</h1>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?love,hearts')";
+            document.body.style.backgroundSize = "cover";
+            document.getElementById('card').style.display = 'none';
+            document.getElementById('messageScreen').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
